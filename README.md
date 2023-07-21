@@ -38,7 +38,7 @@ This API Endpoint is used to get the data from the server in the CSV file format
 Each row in the csv file represents an object in the model.<br>
 Here I used User model for retrieving the data<br>
 
-Responses:
+Responses:<br>
 STATUS:200<br>
 
 Response Body:<br>
