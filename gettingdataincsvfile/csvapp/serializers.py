@@ -5,3 +5,8 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model=get_user_model()
         exclude=("password",)
+
+class DataSerializer(serializers.Serializer):
+    field1=serializers.CharField()
+    field2=serializers.CharField()
+    

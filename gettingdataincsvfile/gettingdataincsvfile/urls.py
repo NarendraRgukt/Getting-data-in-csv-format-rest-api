@@ -23,5 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/schema/',SpectacularAPIView.as_view(),name="api-schema"),
     path("api/docs/",SpectacularSwaggerView.as_view(url_name="api-schema")),
-    path('import-csv',views.UserCsvView.as_view(),name="usercsvformat")
+    path('import-csv/',views.UserCsvView.as_view(),name="usercsvformat"),
+    path('import/csv/convertion/',views.CSVconvertion.as_view(),name="csv-convertion")
 ]
